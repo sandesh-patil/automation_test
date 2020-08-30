@@ -19,7 +19,7 @@ Feature: Homepage Tests
 
     Examples:
       | itemCount | payType  |
-      | 2         | bankwire |
+      | 2        | bankwire |
 
   @myStore11
   Scenario Outline: As a already registered user, I want to be able to add 2 items to the cart and place an order
