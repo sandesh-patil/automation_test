@@ -7,21 +7,20 @@
 
 
 default:
-  homepage_url: https://www.myStore.com/
-  widgets_base_url:
+  homepage_url: http://automationpractice.com/index.php
+
 
 test:
-  homepage_url: https://www.myStore.com/
-  widgets_base_url:
+  homepage_url: http://automationpractice.com/index.php
+
 
 staging:
-  homepage_url: https://www.myStore.com/
-  widgets_base_url:
+  homepage_url: http://automationpractice.com/index.php
+
 
 integration:
-  homepage_url: https://www.myStore.com/
-  widgets_base_url:
+  homepage_url: http://automationpractice.com/index.php
+
 
 production:
-  homepage_url: https://www.qantas.com/
-  widgets_base_url:
+  homepage_url: http://automationpractice.com/index.php

@@ -1,4 +1,4 @@
-@envall @homepage @priority @myStore11
+@envall @homepage @priority @myStore
 Feature: Homepage Tests
 
   As a user
@@ -7,7 +7,7 @@ Feature: Homepage Tests
   Background:
     Given I land on my store homepage
 
-  @myStore11
+  @myStore
   Scenario Outline: As a non registered user, I want to be able to add 2 items to the cart and place an order
     And I select any "<itemCount>" items from the display on homepage
     And I proceed to checkout
@@ -21,7 +21,7 @@ Feature: Homepage Tests
       | itemCount | payType  |
       | 2        | bankwire |
 
-  @myStore11
+  @myStore
   Scenario Outline: As a already registered user, I want to be able to add 2 items to the cart and place an order
     And I select any "<itemCount>" items from the display on homepage
     And I proceed to checkout

@@ -55,5 +55,4 @@ public class PaymentPage {
     public String getPageTitle() {
         return driver.getTitle();
     }
-
 }

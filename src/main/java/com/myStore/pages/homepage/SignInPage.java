@@ -70,7 +70,6 @@ public class SignInPage {
         new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.elementToBeClickable(createAccountBtn));
         action.moveToElement(createAccountButton).click().build().perform();
-
     }
 
     public void enterPersonalInfo() throws IOException {
@@ -172,7 +171,6 @@ public class SignInPage {
         action.moveToElement(proceedToChkOutShipping).click().build().perform();
     }
 
-
     public void emailIdAlreadyRegistered() throws IOException {
         prop.load(inputStream);
         new WebDriverWait(driver, 10)
@@ -189,7 +187,5 @@ public class SignInPage {
         Actions action = new Actions(driver);
         WebElement signInBtn = driver.findElement(signInButton);
         action.moveToElement(signInBtn).click().build().perform();
-
     }
-
 }

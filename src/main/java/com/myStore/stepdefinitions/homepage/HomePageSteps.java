@@ -5,9 +5,7 @@ import com.myStore.pages.homepage.HomePage;
 import com.myStore.stepdefinitions.Hooks;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.api.java.it.Data;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
@@ -22,8 +20,6 @@ public class HomePageSteps {
     public static WebDriver driver;
     HomePage homePage;
     Properties prop = new Properties();
-    Data data;
-
 
     public HomePageSteps() {
         driver = Hooks.driver;
@@ -49,28 +45,6 @@ public class HomePageSteps {
         Assert.assertTrue("Proceed to checkout Button not displaying", homePage.proceedToCheckoutMainBtn().isDisplayed());
         homePage.clickProceedToCheckoutMainButton();
     }
-
-    @And("^I click to proceed to checkout$")
-    public void iClickToProceedToCheckout() {
-
-    }
-
-    @And("^I select to register as new user to make payment$")
-    public void iSelectToRegisterAsNewUserToMakePayment() {
-
-    }
-
-    @Then("^I should be able to successfully place order$")
-    public void iShouldBeAbleToSuccessfullyPlaceOrder() {
-
-    }
-
-
-    /***********
-     *  Need to enter test account login username and password details here to login and proceed to purchase
-     *  ********/
-
-
 }
 
 

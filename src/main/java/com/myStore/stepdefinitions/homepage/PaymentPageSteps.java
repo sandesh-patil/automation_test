@@ -17,7 +17,6 @@ public class PaymentPageSteps {
         driver = Hooks.driver;
     }
 
-
     @When("^I select payment method as \"([^\"]*)\"$")
     public void iSelectPaymentMethodAs(String payType) {
         paymentPage = new PaymentPage(driver);
@@ -30,7 +29,6 @@ public class PaymentPageSteps {
                 paymentPage.selectPayByCheck();
                 break;
         }
-
     }
 
     @When("^I click on confirm order$")
@@ -43,7 +41,5 @@ public class PaymentPageSteps {
     public void iShouldSeeMyOrderSuccessfullyPlaced() {
         Assert.assertTrue("Order confirm page is incorrect", paymentPage.getOrderConfirmText().equals("ORDER CONFIRMATION"));
         Assert.assertTrue("Order confirm page title is incorrect", paymentPage.getPageTitle().contains("Order confirmation - My Store"));
-
     }
-
 }

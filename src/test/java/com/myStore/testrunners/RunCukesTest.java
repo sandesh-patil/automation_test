@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features"},
 
         glue = {"classpath:com.myStore.stepdefinitions"},
-        tags={"@myStore11"})
+        tags={"@myStore"})
 
 
 @RunWith(ExtendedCucumber.class)

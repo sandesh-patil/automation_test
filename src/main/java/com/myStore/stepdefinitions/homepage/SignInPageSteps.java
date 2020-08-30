@@ -13,15 +13,9 @@ public class SignInPageSteps {
 
     SignInPage signInPage;
 
-
-
-
-
-
     public SignInPageSteps() {
         driver = Hooks.driver;
     }
-
 
 
     @And("^I sign in and register as a new user$")
@@ -37,7 +31,6 @@ public class SignInPageSteps {
         signInPage.enterPersonalInfo();
 
         signInPage.clickRegisterButton();
-
     }
 
     @And("^I click on proceed to checkout after registering$")
@@ -45,18 +38,15 @@ public class SignInPageSteps {
         signInPage.proceedToCheckOutAfterRegister();
 
         signInPage.proceedToCheckOutShippingdetails();
-
     }
 
-
     @And("^I sign in as already registered user$")
-    public void iSignInAsAlreadyRegisteredUser() throws InterruptedException, IOException {
+    public void iSignInAsAlreadyRegisteredUser() throws IOException {
         signInPage = new SignInPage(driver);
         signInPage.emailIdAlreadyRegistered();
 
         signInPage.enterPasswordAlreadyRegistered();
 
         signInPage.clickSignInButton();
-
     }
 }

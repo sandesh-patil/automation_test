@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-
 public class HomePage {
     public WebDriver driver;
 
@@ -18,8 +17,6 @@ public class HomePage {
     private final By itemContainer = By.cssSelector("div.product-container");
     private final By proceedToCheckOutBtn = By.cssSelector("div#layer_cart a > span");
     private final By proceedCheckoutMainBtn = By.cssSelector("div#center_column a.button.btn.btn-default.standard-checkout.button-medium > span");
-
-
 
     /**
      * Constructor to initialise the driver
@@ -33,7 +30,6 @@ public class HomePage {
 
 
     public void selectItemsToCart(int itemCount) {
-
         for (int i = 0; i < itemCount; i++) {
             if (i == itemCount - 1) {
                 selectAddToCart(i);
@@ -48,7 +44,6 @@ public class HomePage {
             driver.findElement(continueShoppingButton).click();
         }
     }
-
 
     public void selectAddToCart(int i) {
         List<WebElement> products = driver.findElements(itemContainer);
@@ -71,7 +66,5 @@ public class HomePage {
         new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.visibilityOfElementLocated(proceedCheckoutMainBtn));
         action.moveToElement(proceedToCheckoutMainBtn()).click().build().perform();
-
     }
-
-    }
+}
