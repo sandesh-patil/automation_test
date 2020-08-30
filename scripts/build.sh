@@ -1,0 +1,1 @@
+Note: Env configuration script for executing in remote Bamboo CI/CD

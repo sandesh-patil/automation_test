@@ -1,0 +1,49 @@
+####################################################################################
+#Description: Global Configuration to the testing platform
+#Author: Sandesh Patil
+####################################################################################
+
+env: production #test, staging, blue, production
+is_blue_environment: "false" #true, false
+widget_provider: "true"
+
+local_browser: chrome #chrome, firefox, ie
+is_browser_headless: "false" #true, false -- Run headless browser. if empty, will use headless for prod and bead for non-prod.
+ci: "false" #true, false  -- running on CI or local
+
+##Selenium setup
+#is_remote_driver: "false" #true, false
+#remote_driver: "perfecto_win10_chrome79"
+#selenium_hub: "https://qantas.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast"
+#selenium_hub_proxy: "proxy.qcpaws.qantas.com.au:3128"
+#
+##browser mob proxy setting
+#is_mockproxy_enabled: "" #true or false to allow all browser traffic going through embedded mock proxy to verify payload or mock response. if empty, will not use mockproxy for prod, while use mockproxy for non-prod
+#
+##ZAP proxy setting
+#is_zap_enabled: "false" #true or false to allow all browser traffic going through embedded ZAP proxy to detect security risks.
+#zap_proxy_addr: "127.0.0.1:6666" #127.0.0.1:6666
+#
+##Corporate Proxy Setup
+#is_proxy_enabled: "false" #true, false
+#is_browser_proxy_enabled: "" #this is specifically indicate the browser uses proxy or not. By default using corporate proxy on local while no proxy on remote.
+#proxy_addr: "proxy.qcpaws.qantas.com.au:3128"
+#proxy_bypass: "10.*, *.qcpaws.qantas.com.au, www-staging.qantas.com, 127.0.0.1"
+#
+#reuse_driver: "true" #true, false -- For test scenairos without @reset tag, driver will be released and reused for the next test.
+#remove_flaky_failures: "true"
+#timeout: "10"
+#take_screenshot_all: "true" #true, false -- always take screenshot when each test finish. Otherwise only take screenshot when test failed.
+#
+#min_desktop_width: "960" #device with less width is tablet
+#min_tablet_width: "768" #device with less width is mobile
+#
+#local_web_server_port: "37777" #Used by local web server
+#
+#
+##Accessibility Test Setup
+#axe_report_level: serious #critical, serious, moderate, all
+#axe_tags: all  #wcag2a, wcag2aa, wcag412,section508,section508.22.a, all
+#
+#is_slack_published: "false"
+#slack_channel_api: "https://hooks.slack.com/services/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" # can be a list separated by ';'

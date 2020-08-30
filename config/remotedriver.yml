@@ -1,0 +1,15 @@
+####################################################################################
+#Description: Configuration for driving different browsers settings with perfecto OR other cross-browser plugins
+#Author: Sandesh Patil
+#NOTE: The below settings are just an example and no real data
+####################################################################################
+
+perfecto_win10_chrome79:
+  securityToken: DEwZTFjNTg0MTIiLCJleHAiOjAsIm5iZiI6MCwiaWF0IjoxNTc4MzU2OTY0LCJpc3MiOiJodHRwczovL2F1dGgucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3FhbnRhcy1wZXJmZWN0b21vYmlsZS1jb20iLCJhdWQiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsInN1YiI6IjgwYTFjMTNjLTNiY2YtNDlhYS05MzU1LTAxZTU4NWRmYzkxZiIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiMmFlMmE1ZWItOTJhNC00N2MwLTk3MTgtMzE5MTNkYjQ3ODll0OTI3LTlkN2MtMTNiZTU5NDNlN2VlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19fQ.aOftZBOisgn8-n8BF8_L4YRHrnHCHoEqITrT6sR8aEIk4rt_6AnnskBlmSdBqEoxTQILHjSTrc_fx1IqBpsa4v7WgtJu_zFDItfIlT22bhN0bvaHVGIA_p0vrfAJXk-Z5cOKShcwxZlVHfV1qKjiSad9B6oKHj4ZzTS2Tx1O2-yD6LObELAorg-bx4Yuw4f_X5awL4plHkAHN06
+  platformName: Windows
+  platformVersion: "10"
+  browser: Chrome
+  browserName: Chrome
+  browserVersion: "79"
+  resolution: "1280x1024"
+  location: "AP Sydney"

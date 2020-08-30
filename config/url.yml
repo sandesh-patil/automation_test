@@ -1,0 +1,27 @@
+####################################################################################
+#Author: Sandesh Patil
+#Priority: Specified env config will be picked up, otherwise will use default value
+#Format: Support both absolute path and relative path.
+
+####################################################################################
+
+
+default:
+  homepage_url: https://www.myStore.com/
+  widgets_base_url:
+
+test:
+  homepage_url: https://www.myStore.com/
+  widgets_base_url:
+
+staging:
+  homepage_url: https://www.myStore.com/
+  widgets_base_url:
+
+integration:
+  homepage_url: https://www.myStore.com/
+  widgets_base_url:
+
+production:
+  homepage_url: https://www.qantas.com/
+  widgets_base_url:
