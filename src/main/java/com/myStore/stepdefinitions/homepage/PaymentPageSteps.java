@@ -40,6 +40,6 @@ public class PaymentPageSteps {
     @Then("^I should see my order successfully placed$")
     public void iShouldSeeMyOrderSuccessfullyPlaced() {
         Assert.assertTrue("Order confirm page is incorrect", paymentPage.getOrderConfirmText().equals("ORDER CONFIRMATION"));
-        Assert.assertTrue("Order confirm page title is incorrect", paymentPage.getPageTitle().contains("Order confirmation - My Store"));
+        Assert.assertTrue("Order confirm page title is incorrect", paymentPage.getPageTitle().equals("Order confirmation - My Store"));
     }
 }
