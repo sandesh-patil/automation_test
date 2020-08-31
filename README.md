@@ -7,7 +7,7 @@ Selenium + Cucumber-JVM automation testing framework
 Introduction
 -----------
 
-Selenium + Cucumber-JVM framework aims for web automation testing. In this framework the acceptance criteria written in plain English are translated into the Java code by Cucumber. Selenium is used to drive the browser. Test parameters like URL, test data and message etc are managed by Yaml or properties files. Finally cucumber html report is generated to display test result.
+Selenium + Cucumber-JVM framework aims for web automation testing. In this framework the acceptance criteria written in plain English are translated into the Java code by Cucumber. Selenium is used to drive the browser. Test parameters like URL, test data and message etc are managed by properties files. Finally cucumber html report is generated to display test result.
 
 Prerequisites
 -------------
@@ -40,7 +40,7 @@ Execute test scenarios
 ----------------------
 To execute tests locally, execute the following commands: 
 
-	mvn clean test
+	mvn clean install
 	
 To execute tests with Junit test runner in IDE:
 * 	Configure the RunCukesTest runner if not already configured from Edit configuration
@@ -82,12 +82,12 @@ After executing tests, navigate to below folder to check cucumber html reports:
 Important Information
 ---------------------
 * add your feature files under src/test/resources/features/
-* add your step definition under src/test/java/stepdefinitions/
-* add your page object under src/test/java/com/amazon/pages/XXX( XXX stands for items on mega menu)  
-* put common function under src/test/java/com/amazon/common/
+* add your step definition under src/java/com/myStore/stepdefinitions/
+* add your page object under src/java/com/myStore/pages/
+* put common function under src/java/com/myStore/common/
 * git commands:
 	
-	git clone https://github.com/sandesh-patil/web_automation_test/tree/feature/automation_wip (clone the repository)  
+	git clone https://github.com/sandesh-patil/automation_test.git (clone the repository)  
 	git status (check git status, like which branch you are working now)  
 	git checkout -b <branch-name>  (create a new branch)  
 
